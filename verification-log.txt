@@ -1,0 +1,61 @@
+PASS basic literal 2x2 n=2 max_abs_error=0
+PASS tiled literal 2x2 n=2 max_abs_error=0
+PASS basic zero n=1 max_abs_error=0
+PASS tiled zero n=1 max_abs_error=0
+PASS basic identity n=1 max_abs_error=0
+PASS tiled identity n=1 max_abs_error=0
+PASS basic ones n=1 max_abs_error=0
+PASS tiled ones n=1 max_abs_error=0
+PASS basic signed random n=1 max_abs_error=0
+PASS tiled signed random n=1 max_abs_error=0
+PASS basic zero n=3 max_abs_error=0
+PASS tiled zero n=3 max_abs_error=0
+PASS basic identity n=3 max_abs_error=0
+PASS tiled identity n=3 max_abs_error=0
+PASS basic ones n=3 max_abs_error=0
+PASS tiled ones n=3 max_abs_error=0
+PASS basic signed random n=3 max_abs_error=1.19209e-07
+PASS tiled signed random n=3 max_abs_error=1.19209e-07
+PASS basic zero n=17 max_abs_error=0
+PASS tiled zero n=17 max_abs_error=0
+PASS basic identity n=17 max_abs_error=0
+PASS tiled identity n=17 max_abs_error=0
+PASS basic ones n=17 max_abs_error=0
+PASS tiled ones n=17 max_abs_error=0
+PASS basic signed random n=17 max_abs_error=4.76837e-07
+PASS tiled signed random n=17 max_abs_error=4.76837e-07
+PASS basic zero n=31 max_abs_error=0
+PASS tiled zero n=31 max_abs_error=0
+PASS basic identity n=31 max_abs_error=0
+PASS tiled identity n=31 max_abs_error=0
+PASS basic ones n=31 max_abs_error=0
+PASS tiled ones n=31 max_abs_error=0
+PASS basic signed random n=31 max_abs_error=7.15256e-07
+PASS tiled signed random n=31 max_abs_error=7.15256e-07
+PASS basic zero n=32 max_abs_error=0
+PASS tiled zero n=32 max_abs_error=0
+PASS basic identity n=32 max_abs_error=0
+PASS tiled identity n=32 max_abs_error=0
+PASS basic ones n=32 max_abs_error=0
+PASS tiled ones n=32 max_abs_error=0
+PASS basic signed random n=32 max_abs_error=7.15256e-07
+PASS tiled signed random n=32 max_abs_error=7.15256e-07
+PASS basic zero n=65 max_abs_error=0
+PASS tiled zero n=65 max_abs_error=0
+PASS basic identity n=65 max_abs_error=0
+PASS tiled identity n=65 max_abs_error=0
+PASS basic ones n=65 max_abs_error=0
+PASS tiled ones n=65 max_abs_error=0
+PASS basic signed random n=65 max_abs_error=1.90735e-06
+PASS tiled signed random n=65 max_abs_error=1.90735e-06
+PASS: all 50 matrix kernel/fixture checks verified
+BENCHMARK CSV (milliseconds; ratios explicitly named):
+n,kernel,max_abs_error,cpu_median_ms,gpu_kernel_mean_ms,gpu_transfer_inclusive_mean_ms,cpu_over_kernel,cpu_over_transfer_inclusive,basic_over_tiled_kernel
+128,basic,3.814697266e-06,3.229338,0.01640000045,0.1190624,196.9108482,27.1230716,1.309736735
+128,tiled,3.814697266e-06,3.229338,0.01252160072,0.116137,257.9013715,27.80628051,1.309736735
+256,basic,5.722045898e-06,24.587098,0.09168639779,0.349884,268.1651651,70.27214162,1.481489168
+256,tiled,5.722045898e-06,24.587098,0.06188799739,0.3290036,397.2837874,74.73200293,1.481489168
+512,basic,1.049041748e-05,204.151059,0.6638544083,1.4621174,307.5238433,139.6269951,1.564678766
+512,tiled,1.049041748e-05,204.151059,0.4242752075,1.222276,481.1760277,167.0253355,1.564678766
+Benchmark output verified and saved to benchmark-results.csv
+

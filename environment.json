@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4, 7.5",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+  "run_utc": "2026-10-02T07:20:35.654719+00:00",
+  "tile_size": 16,
+  "vector_block_size": 256,
+  "seed": 42,
+  "cpu_runs": 3,
+  "gpu_warmups": 5,
+  "gpu_timed_launches": 20,
+  "transfer_runs": 5,
+  "compiler_flags": "-std=c++17 -O2 -arch=sm_75",
+  "source_sha256": {
+    "vector_add.cu": "ea9d15ba049e1ee99f44e9f799388946b6931d7f8db3d61a8003f792845088e3",
+    "matmul.cu": "cefa16d9e3ffe8c6deceeb3a1ece7ba13cadf6288d03dd2ea28ecb1bdc6c3d81"
+  }
+}

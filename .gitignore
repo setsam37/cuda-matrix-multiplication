@@ -1,0 +1,8 @@
+# Generated executables and runtime scratch
+vector_add
+matmul
+vector_red*
+matmul_red*
+*.o
+*.out
+__pycache__/
